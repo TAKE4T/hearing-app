@@ -3,10 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo "Starting build with latest fixes - hearingAppFigma directory removed"
         - npm ci
     build:
       commands:
+        - echo "Building application..."
         - npm run build
+        - echo "Build completed successfully"
   artifacts:
     baseDirectory: build
     files:

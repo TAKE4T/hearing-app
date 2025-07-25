@@ -152,6 +152,10 @@ npm run build
 4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
 5. プルリクエストを作成
 
+## デプロイメント状況
+
+✅ AWS Amplify でのデプロイが成功しました！
+
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下で公開されています。

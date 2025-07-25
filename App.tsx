@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Leaf, RotateCcw, Sparkles } from 'lucide-react';
-import { Button } from './components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
-import { ScrollArea } from './components/ui/scroll-area';
-import { Badge } from './components/ui/badge';
-import { ChatMessage } from './components/ChatMessage';
-import { ChatInput } from './components/ChatInput';
-import { RecipeCard } from './components/RecipeCard';
+import { Button } from './src/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './src/components/ui/card';
+import { ScrollArea } from './src/components/ui/scroll-area';
+import { Badge } from './src/components/ui/badge';
+import { ChatMessage } from './src/components/ChatMessage';
+import { ChatInput } from './src/components/ChatInput';
+import { RecipeCard } from './src/components/RecipeCard';
 import { 
   type Message, 
   type ChatState, 
   healthQuestions, 
   generateDiagnosis 
-} from './utils/chat';
-import { diagnoseWithLLM, getChatResponse } from './utils/llm-api';
+} from './src/utils/chat';
+import { diagnoseWithLLM, getChatResponse } from './src/utils/llm-api';
 
 export default function App() {
   const [chatState, setChatState] = useState<ChatState>({
